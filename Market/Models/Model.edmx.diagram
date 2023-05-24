@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2ab73a3e0204991bc9903b09de85bb5" Name="Diagram1">
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.DeliveryPoint" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.DeliveryType" Width="1.5" PointX="3" PointY="7.375" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.Order" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.OrderStatus" Width="1.5" PointX="3" PointY="9.75" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.Product" Width="1.5" PointX="5.25" PointY="13" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.ProductOrder" Width="1.5" PointX="7.5" PointY="1.5" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.ProductType" Width="1.5" PointX="3" PointY="14.875" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.Provider" Width="1.5" PointX="3" PointY="12.5" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.Role" Width="1.5" PointX="0.75" PointY="1.875" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.User" Width="1.5" PointX="3" PointY="1.125" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Order_DeliveryPoint" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Order_DeliveryType" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Order_OrderStatus" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Order_User" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_ProductOrder_Order" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Product_ProductType" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_Product_Provider" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_ProductOrder_Product" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_User_Role" />
+        <EntityTypeShape EntityType="RahimovMarketPalaceModel.ProductPhoto" Width="1.5" PointX="7.5" PointY="13.625" />
+        <AssociationConnector Association="RahimovMarketPalaceModel.FK_ProductPhoto_Product" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

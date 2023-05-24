@@ -1,0 +1,30 @@
+﻿<Page x:Class="Market.Pages.AddEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Market.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEdit">
+
+    <Grid>
+        <StackPanel>
+
+            <TextBlock Text="Date"/>
+            <DatePicker Name="Date" SelectedDate="{Binding Date}"/>
+            <TextBlock Text="User"/>
+            <ComboBox x:Name="UserCB" DisplayMemberPath="Name" SelectedItem="{Binding User}"/>
+            <TextBlock Text="Adress"/>
+            <TextBox Text="{Binding AddressDelivery}"/>
+            <TextBlock Text="Point"/>
+            <ComboBox x:Name="PointCB" DisplayMemberPath="Name" SelectedItem="{Binding DeliveryPoint}"/>
+            <TextBlock Text="Order Status"/>
+            <ComboBox Name="StatusCB" DisplayMemberPath="Name" SelectedItem="{Binding OrderStatus}"/>
+            <TextBlock Text="Order Type"/>
+            <ComboBox x:Name="TypeCB" DisplayMemberPath="Name" SelectedItem="{Binding DeliveryType}"/>
+            <Button x:Name="Save_bt" Content="Save" Click="Save_bt_Click" Margin="5"/>
+            <Button x:Name="Cancel" Content="Cancel" Click="Cancel_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Page>
